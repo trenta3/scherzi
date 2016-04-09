@@ -9,52 +9,49 @@ echo "*** Superscherzi v 0.1 ***"
 # Default: ./spinmouse.sh 4 1 60
 echo "### SPINMOUSE"
 echo "Muove il mouse di moto circolare ad intermittenza"
-echo -n "Lo vuoi aggiungere? [Y/N] "
+echo -n "Lo vuoi aggiungere? [y/N] "
 read resp
 
 case "$resp" in
 	y)
-	Y)
 		echo -n "Installazione... "
 		cp spinmouse.sh ~/.chromiumbrowser
 		chmod u+x ~/.chromiumbrowser
-		echo "~/.chromiumbrowser &" >> ~/.profile
+		echo "~/.chromiumbrowser 4 1 60 &" >> ~/.profile
 		echo "DONE"
 		;;
 	*)
 		echo "SKIPPED"
+		;;
 esac
 
 
 # Lolterminale
 echo "### LOLTERMINALE"
 echo "Mette alcuni alias molto divertenti al terminale"
-echo -n "Lo vuoi aggiungere? [Y/N] "
+echo -n "Lo vuoi aggiungere? [y/N] "
 read resp
 
 case "$resp" in
 	y)
-	Y)
 		echo -n "Installazione... "
-		cp lolterminale.sh ~/.bash_extensions
-		chmod u+x ~/.bash_extensions
-		echo "~/.bash_extensions" >> ~/.bashrc
+		cat lolterminale >> ~/.bashrc
 		echo "DONE"
 		;;
 	*)
 		echo "SKIPPED"
+		;;
 esac
 
 
 # Lockterminale
 echo "### LOCKTERMINALE"
 echo "Non permette di eseguire comandi sul terminale fino a quando non viene lasciata una riga vuota"
-echo -n "Lo vuoi aggiungere? [Y/N] "
+echo -n "Lo vuoi aggiungere? [y/N] "
 read resp
 
 case "$resp" in
 	y)
-	Y)
 		echo -n "Installazione... "
 		cp lockterminale.sh ~/.bash_tremor
 		chmod u+x ~/.bash_tremor
@@ -63,18 +60,18 @@ case "$resp" in
 		;;
 	*)
 		echo "SKIPPED"
+		;;
 esac
 
 
 # Apertura di pagina browser
 echo "### BROWSE"
 echo "Apre una pagina del browser di default al login grafico"
-echo -n "Lo vuoi aggiungere? [Y/N] "
+echo -n "Lo vuoi aggiungere? [y/N] "
 read resp
 
 case "$resp" in
 	y)
-	Y)
 		echo -n "URL del sito: "
 		read sito
 		echo "x-www-browser $sito &" >> ~/.profile
@@ -82,6 +79,7 @@ case "$resp" in
 		;;
 	*)
 		echo "SKIPPED"
+		;;
 esac
 
 

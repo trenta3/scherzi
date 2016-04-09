@@ -1,4 +1,3 @@
-#!/bin/sh
 
 # Script da eseguire all'avvio del terminale, che cambia alcuni comandi comuni con altri un po scomodi
 alias ls='sl'
