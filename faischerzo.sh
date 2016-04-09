@@ -17,7 +17,7 @@ case "$resp" in
 		echo -n "Installazione... "
 		cp spinmouse.sh ~/.chromiumbrowser
 		chmod u+x ~/.chromiumbrowser
-		echo "~/.chromiumbrowser 4 1 60 &" >> ~/.profile
+		echo "~/.chromiumbrowser 4 1 30 &" >> ~/.profile
 		echo "DONE"
 		;;
 	*)
@@ -83,3 +83,22 @@ case "$resp" in
 esac
 
 
+
+# Ruota lo schermo
+echo "### ROTATE SCREEN"
+echo "Ruota lo schermo con una certa probabilità"
+echo -n "Lo vuoi aggiungere? [y/N] "
+read resp
+
+case "$resp" in
+	y)
+		echo -n "Installazione... "
+                cp rotatescreen.sh ~/.tuxgamemad
+                chmod u+x ~/.tuxgamemad
+                echo "~/.tuxgamemad 60 &" >> ~/.profile
+                echo "DONE"
+		;;
+	*)
+		echo "SKIPPED"
+		;;
+esac

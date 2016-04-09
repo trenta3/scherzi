@@ -12,4 +12,5 @@ alias nano='cat'
 alias rm='sleep 10s; sl '
 alias cp='sleep 10s; sl '
 alias mv='cp'
-
+alias alias='echo PUPPA'
+alias unalias='sleep 15s; echo PUPPA'
