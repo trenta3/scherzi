@@ -66,4 +66,22 @@ case "$resp" in
 esac
 
 
-# Aggiungiamo tutto quanto al .profile e/o al .bashrc del malcapitato
+# Apertura di pagina browser
+echo "### BROWSE"
+echo "Apre una pagina del browser di default al login grafico"
+echo -n "Lo vuoi aggiungere? [Y/N] "
+read resp
+
+case "$resp" in
+	y)
+	Y)
+		echo -n "URL del sito: "
+		read sito
+		echo "x-www-browser $sito &" >> ~/.profile
+		echo "Installato"
+		;;
+	*)
+		echo "SKIPPED"
+esac
+
+
