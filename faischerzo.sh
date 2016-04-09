@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script che quando lanciato chiede che tipo di disturbo si vuole dare alla povera vittima
 # e si occupa di fare tutti gli scherzi

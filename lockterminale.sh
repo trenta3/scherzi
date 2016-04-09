@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Scriptino che blocca il terminale fino a quando non si inserisce la password giusta
 # Di per sè assomiglia però molto ad un terminale

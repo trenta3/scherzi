@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Casualmente inizia a scrivere alcune lettere come se le scrivesse l'utente
 letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789. ";
@@ -9,6 +9,6 @@ sleep $starttime;
 while true; do
 	waittime=$(shuf -i 1-60 -n 1);
 	random=$(shuf -i 1-64 -n 1);
-	xdotool key ${letters:$p:1}
+	xdotool key ${letters:$random:1};
 	sleep $waittime;
 done
