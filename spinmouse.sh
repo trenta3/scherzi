@@ -1,4 +1,5 @@
 #!/bin/bash
+# Script dovuto ad Andrea Stacchiotti. Copyright e riutilizzo del codice a sua discrezione.
 # Muove il mouse circolarmente. Si chiama con Raggio e Velocità e Numero di secondi tra un giro e l'altro
 
 R=$1;
